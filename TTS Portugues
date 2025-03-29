@@ -1,0 +1,10 @@
+from gtts import gTTS
+
+# Texto em português do Brasil
+texto = "Revolucione a Interação Pública: Utilize avatares virtuais de última geração para transformar a forma como os cidadãos se conectam com os serviços do governo."
+
+# Criar objeto TTS e salvar como arquivo MP3
+tts = gTTS(text=texto, lang='pt-br')
+tts.save("voz_avatares_governo.mp3")
+
+print("Arquivo de áudio gerado com sucesso!")
